@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="./progGraficos.js" defer></script>
+    <title>Gráficos - MAJEM</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Logo_MAJEM.jpeg" alt="Logo">
+            <h1>Gráficos de Quantidade e Preço</h1>
+        </div>
+        <div class="icons">
+            <a href="index.html" class="home-icon" title="Página Inicial">&#8962;</a>
+            <div class="menu-icon" onclick="toggleMenu()" title="Menu">&#9776;</div>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="./cadastrar.html">Cadastrar Produto</a></li>
+                <li><a href="./cadastrarLote.html">Cadastrar Lote</a></li>
+                <li><a href="./listar.html">Listar</a></li>
+                <li><a href="./atualizar.html">Atualizar</a></li>
+                <li><a href="./consultar.html">Consultar</a></li>
+                <li><a href="./apagar.html">Apagar</a></li>
+                <li><a href="./graficos.html">Gráficos</a></li>
+                <li><a href="./sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br><br>
+        <h1>Gráfico de Quantidade</h1>
+        <br><br>
+        <div class="chart-container">
+            <canvas class="barras" id="grafBarras" height="100"></canvas>
+        </div>
+        <hr>
+        <br><br>
+        <h1>Gráfico de Preço</h1>
+        <br><br>
+        <div class="chart-wrapper">
+            <div class="chart-Pie">
+                <div id="chartPie">
+                    <div class="pie">
+                        <canvas id="grafPie" height="100"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
