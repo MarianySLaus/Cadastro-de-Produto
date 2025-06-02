@@ -13,6 +13,7 @@ fetch('http://localhost:8081/produto')
             <div class="card-content">
                 <h3>${produto.nome}</h3>
                 <p class="price">R$ ${produto.preco.toFixed(2)}</p>
+                <p><strong>Código:</strong> ${produto.id} </p>
                 <p><strong>Quantidade:</strong> ${produto.quantidade}</p>
                 <p><strong>Marca:</strong> ${produto.marca}</p>
                 <p>${produto.descricao}</p>
