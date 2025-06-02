@@ -104,6 +104,11 @@ nav.show {
     width: 400px;
 }
 
+.aInicio:hover{
+    background-color: #7a1e42;
+    transform: scale(1.05);
+}
+
 main {
     text-align: center;
     justify-content: center;
